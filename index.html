@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biswajeet Panda | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            if (savedTheme === 'dark') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-text">Biswajeet</a>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div style="display:flex; align-items:center;">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero modern-hero">
+    <div class="hero-grid-bg"></div>
+    
+    <div class="hero-blur blur-left"></div>
+    <div class="hero-blur blur-right"></div>
+
+    <div class="container hero-content">
+        <div class="hero-main">
+            
+            <div class="hero-intro">
+                <div class="hero-availability animate-in" style="animation-delay: 0.1s;">
+                    <span class="availability-badge"><span class="blink-dot"></span> AVAILABLE FOR WORK</span>
+                </div>
+                
+                <h1 class="hero-title-modern animate-in" style="animation-delay: 0.2s;">
+                    <span class="hero-hello">Hello, I’m</span><br>
+                    <span class="hero-name-gradient">Biswajeet Panda</span>
+                </h1>
+                
+                <div class="hero-badges animate-in" style="animation-delay: 0.3s;">
+                    <span class="hero-badge blue"><i class="fas fa-code"></i> Web Developer</span>
+                    <span class="hero-badge dark"><i class="fas fa-laptop"></i> IT Student</span>
+                    <span class="hero-badge dark"><i class="fas fa-brain"></i> Problem Solver</span>
+                </div>
+
+                <p class="hero-bio-modern animate-in" style="animation-delay: 0.4s;">
+                    Pursuing BSc in ITM at <b>Utkal University</b>. I build high-performance digital experiences with a focus on <span class="highlight">modern web technologies</span> and <span class="highlight">clean design</span>.
+                </p>
+
+                <div class="hero-buttons-modern animate-in" style="animation-delay: 0.5s;">
+                    <a href="#projects" class="btn btn-primary hero-glow">
+                        <span>View Portfolio</span> <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+                </div>
+
+                <div class="hero-social-modern animate-in" style="animation-delay: 0.6s;">
+                    <span>FOLLOW ME</span>
+                    <div class="social-link-group">
+                        <a href="https://github.com/Biswajeetpandaa" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/biswajeetpanda01/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/__biswajeet_panda__?igsh=MTNib3g1NWFhMWpwcw=="><i class="fab fa-instagram"></i></i></a>
+               
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-profile-modern animate-in" style="animation-delay: 0.4s;">
+                <div class="profile-img-glow">
+                    <div class="spinner-border"></div>
+                    <img src="./media/hero.jpg" alt="Biswajeet Panda" onerror="this.src='https://ui-avatars.com/api/?name=Biswajeet+Panda&background=00f2ff&color=fff&size=512'">
+                    
+                    <div class="profile-badge profile-badge-projects float-1">
+                        <div class="badge-icon"><i class="fas fa-layer-group"></i></div>
+                        <div class="badge-info"><strong>2+</strong><span>Projects</span></div>
+                    </div>
+                    
+                    <div class="profile-badge profile-badge-year float-2">
+                        <div class="badge-icon gold"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="badge-info"><strong>2nd</strong><span>Year Student</span></div>
+                    </div>
+                    
+                    <div class="profile-badge profile-badge-skills float-3">
+                        <div class="badge-icon green"><i class="fas fa-code-branch"></i></div>
+                        <div class="badge-info"><strong>5+</strong><span>Skills</span></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <a href="#about" class="scroll-down-btn animate-in" style="animation-delay: 1s;">
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+        <span>Scroll Down</span>
+    </a>
+</section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="./media/about.jpg" alt="About Biswajeet" onerror="this.src='https://via.placeholder.com/600x400/050511/00f2ff?text=Biswajeet'">
+                </div>
+                <div class="about-text">
+                    <h3>Who am I?</h3>
+                    <p>I’m currently pursuing my B.Sc. in Information Technology Management at Utkal University, where I’m building a strong foundation in both IT and business strategy. I’m passionate about exploring how technology can solve real-world problems and improve lives. Whether it’s understanding data, developing software, or managing tech-driven projects, I’m eager to keep learning and growing.
+                    </p>
+                    <p>
+                    I’m particularly interested in fields like data analytics, cloud computing, and project management. I believe in combining technical skills with a problem-solving mindset, and I’m always on the lookout for opportunities—internships, collaborations, or projects—that help me apply my learning in practical settings..
+                    </p>
+                    
+                    <div class="about-stats-grid">
+                        <div class="stat-box"><h4>Java & C</h4><p>Core Languages</p></div>
+                        <div class="stat-box"><h4>HTML/CSS</h4><p>Web Design</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Proficiency</h2>
+            
+            <div class="grid-3">
+                <div class="glass-card skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Java</span><span>80%</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>C Language</span><span>70%</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 70%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>JavaScript</span><span>60%</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 60%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Web Stack</h3>
+                    </div>
+                    <div class="tech-badges">
+                        <span class="badge">HTML5</span>
+                        <span class="badge">CSS3</span>
+                        <span class="badge">JS</span>
+                    </div>
+                    <div class="skill-item" style="margin-top: 20px;">
+                        <div class="skill-info"><span>Frontend Design</span><span>80%</span></div>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+                    </div>
+                </div>
+
+                <div class="glass-card skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                        <h3>Tools & Core</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Data Structures</span><span>Strong</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 70%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>SQL / DBMS</span><span>Intermediate</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 65%;"></div></div>
+                        </div>
+                        <div class="tech-badges" style="margin-top: 15px;">
+                            <span class="badge"><i class="fab fa-git-alt"></i> Git</span>
+                            <span class="badge"><i class="fab fa-github"></i> GitHub</span>
+                            <span class="badge"><i class="fas fa-terminal"></i> VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">What I Can Do For You</h2>
+            
+            <div class="grid-3">
+                <div class="glass-card service-card">
+                    <div class="service-number">01</div>
+                    <div class="service-icon-box"><i class="fas fa-palette"></i></div>
+                    <h3>Web Design</h3>
+                    <p>I craft visually stunning, user-centric designs that reflect your brand identity and keep visitors engaged.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Modern UI/UX Layouts</li>
+                        <li><i class="fas fa-check"></i> Mobile-First Approach</li>
+                        <li><i class="fas fa-check"></i> Wireframing</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card service-card">
+                    <div class="service-number">02</div>
+                    <div class="service-icon-box"><i class="fas fa-code"></i></div>
+                    <h3>Frontend Development</h3>
+                    <p>Converting designs into pixel-perfect, responsive code using modern technologies and clean architecture.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> HTML5, CSS3, JS</li>
+                        <li><i class="fas fa-check"></i> React Components</li>
+                        <li><i class="fas fa-check"></i> Animations</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card service-card">
+                    <div class="service-number">03</div>
+                    <div class="service-icon-box"><i class="fas fa-server"></i></div>
+                    <h3>Student Solutions</h3>
+                    <p>Helping fellow students and startups turn ideas into reality with efficient coding and problem-solving.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Academic Projects(Normal calculator,ASCII converter,etc)</li>
+                        <li><i class="fas fa-check"></i> Logic Building</li>
+                        <li><i class="fas fa-check"></i> problem solving </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Work</h2>
+            
+            <div class="grid-3">
+                <div class="glass-card project-card">
+                    <div class="browser-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="project-img-container">
+                        <img src="/media/rock.png" alt="Rock Paper Scissors">
+                      
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Game Development</span>
+                        <h3>Rock Paper Scissors</h3>
+                        <p>Created a command-line version of Rock Paper Scissors that simulates a match against a computer opponent. I implemented random number generation to randomize the computer's moves and used conditional logic (if-else statements) to evaluate the winner based on standard game rules. This project highlights my ability to manage game states and process user input effectively.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">C Language</span><span class="tech-tag">CLI</span><span class="tech-tag">Game Logic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card project-card">
+                    <div class="browser-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="project-img-container">
+                        <img src="./media/number.png" alt="Number Guessing">
+                       
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Game Development</span>
+                        <h3>Number Guessing</h3>
+                        <p>"Developed a console-based game in C where users attempt to guess a randomly generated number. I utilized do-while loops and conditional statements to create the game logic, offering real-time feedback (Too High/Too Low) to guide the player. This project demonstrates a strong grasp of control flow, random number generation, and user input handling.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">C Language</span><span class="tech-tag">Binary Search</span><span class="tech-tag">CLI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card project-card">
+                    <div class="browser-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="project-img-container">
+                        <img src="./media/portfolio.png" alt="Portfolio Website">
+                      
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Web Design</span>
+                        <h3>Personal Portfolio</h3>
+                        <p>Designed and built a fully responsive portfolio website to showcase my academic projects and technical skills. I utilized HTML for semantic structure and CSS (Flexbox/Grid) to ensure the layout adapts seamlessly to mobile and desktop screens. Additionally, I implemented JavaScript to create interactive elements, such as a mobile navigation menu and smooth scrolling behavior.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span><span class="tech-tag">JS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title">Academic Journey</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 2024 - Present</span>
+                        <h3>B.Sc. IT Management</h3>
+                        <p class="institution">Utkal University, Bhubaneswar</p>
+                        <div class="edu-details">
+                            <span class="edu-badge status">Running (2nd Year)</span>
+                            <p>Focusing on Data Analytics, Cloud Computing, and Software Engineering principles.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 2022 - 2024</span>
+                        <h3>Higher Secondary (12th)</h3>
+                        <p class="institution"> Narasinghpur Higher Secondary School</p>
+                        <div class="edu-details">
+                            <span class="edu-badge grade">Score: 78.5%</span>
+                            <span class="edu-badge stream">Stream: Science (PCM)</span>
+                            <p>Completed higher secondary education with a major in Physics, Chemistry, and Mathematics </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 2021</span>
+                        <h3>Matriculation (10th)</h3>
+                        <p class="institution">Ananta Narayan High School</p>
+                        <div class="edu-details">
+                            <span class="edu-badge grade">Score: 91.5%</span>
+                            <p>Built a strong foundation in Mathematics and Computer Applications.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-wrapper">
+                
+                <div class="contact-info-col">
+                    <h3>Got a project?</h3>
+                    <p class="contact-desc">I'm currently available for freelance work or student collaborations. Send me a message and let's talk!</p>
+                    <div class="info-cards">
+                        <div class="glass-card info-card">
+                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="info-text">
+                                <span>Email Me</span><a href="mailto:biswajeetpandaaa07@gmail.com">biswajeetpandaaa07@gmail.com<a>
+
+                         
+                            </div>
+                        </div>
+                        <div class="glass-card info-card">
+                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="info-text">
+                                <span>Location</span><p>Bhubaneswar, Odisha</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-connect">
+                        <h4>Follow Me</h4>
+                        <div class="social-icons">
+                            <a href="https://github.com/Biswajeetpandaa" target="_blank" class="social-btn github"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/biswajeetpanda01/" target="_blank" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/__biswajeet_panda__?igsh=MTNib3g1NWFhMWpwcw==" target="_blank" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+                                    
+                     
+                      
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card contact-form-box">
+                    <form id="contactForm">
+                        <div class="form-group"><label>Your Name</label><input type="text" placeholder="John Doe" required></div>
+                        <div class="form-group"><label>Your Email</label><input type="email" placeholder="john@example.com" required></div>
+                        <div class="form-group"><label>Subject</label><input type="text" placeholder="Project Inquiry" required></div>
+                        <div class="form-group"><label>Message</label><textarea rows="5" placeholder="Tell me about your project..." required></textarea></div>
+                        <button type="submit" class="btn btn-primary send-btn"><span>Send Message</span><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Biswajeet Panda</h3>
+                    <p>Building digital experiences with passion and code. Open for collaborations and new opportunities.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Socials</h4>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/biswajeetpanda01/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/Biswajeetpandaa" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.instagram.com/__biswajeet_panda__?igsh=MTNib3g1NWFhMWpwcw==" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Biswajeet Panda. All Rights Reserved.</p>
+            </div>
+        </div>
+        <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
