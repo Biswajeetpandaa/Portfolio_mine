@@ -803,8 +803,29 @@ section { padding: 100px 0; }
     
     .profile-img-glow { width: 200px; height: 200px; }
     .profile-img-glow img { width: 170px; height: 170px; border-width: 3px; }
-    .spinner-border { display: none; }
-    .profile-badge { display: none; }
+    
+    /* FIX: Restored Spinner */
+    .spinner-border { 
+        display: block; 
+    }
+    
+    /* FIX: Restored Badges with adjustments */
+    .profile-badge { 
+        display: flex; /* restored */
+        transform: scale(0.7); /* Smaller scale for mobile */
+        padding: 4px 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    
+    /* Adjust Badge Content size */
+    .profile-badge .badge-icon { width: 24px; height: 24px; font-size: 0.7rem; }
+    .profile-badge .badge-info strong { font-size: 0.75rem; }
+    .profile-badge .badge-info span { font-size: 0.55rem; }
+    
+    /* Mobile specific positions to avoid blocking the face */
+    .profile-badge-projects { top: -15px; left: -10px; }
+    .profile-badge-year { bottom: 0px; left: -15px; }
+    .profile-badge-skills { top: 20px; right: -15px; }
     
     .hero-badges { display: none; }
     
